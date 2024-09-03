@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: rgb(219, 86, 9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.portfolio-container {
+    text-align: center; /* Center-aligns text inside this container */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(219, 86, 9);
+    margin-bottom: 40px;
+}
+
+.portfolio-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: rgb(219, 86, 9);
+    border-bottom: 2px solid lawngreen;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Ensures the h2 text is centered */
+    display: inline-block; /* Make sure the border aligns properly */
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Ensure the card background color is visible and overlays the image */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(3, 53, 109); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-content strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Background image change animation */
+.card {
+    animation: backgroundChange 20s infinite;
+}
+
+/* Example animation */
+@keyframes backgroundChange {
+    0% { background-image: url('image1.jpg'); }
+    25% { background-image: url('image2.jpg'); }
+    50% { background-image: url('image3.jpg'); }
+    75% { background-image: url('image4.jpg'); }
+    100% { background-image: url('image1.jpg'); }
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <h1>Recently Completed Project Portfolio</h1>
+
+        <div class="portfolio-section">
+            <h2><i class="fas fa-road"></i> Roads & Cemetery </h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Road maintenance (Resurfacing and rehabilitation of various roads and Wards)
+                        <br>
+                        <strong>Cost:</strong> R52 026 571.05 <br>
+                        <strong>Duration:</strong> 7 Months
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Road maintenance (Resurfacing and rehabilitation of various roads and Wards)
+                        <br>
+                        <strong>Cost:</strong> R30 391 627.45
+                        <br>
+                        <strong>Duration:</strong> 7 Months
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Upgrade and Development of Bloemendal Cemetery
+                        <br>
+                        <strong>Cost:</strong> R5 105 457.12
+                        <br>
+                        <strong>Duration:</strong> 3 Months
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Upgrade and Development of Kabah Cemetery
+                        <br>
+                        <strong>Cost:</strong> R7 788 768.60
+                        <br>
+                        <strong>Duration:</strong> 3 Months
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - SURFACING OF GRAVEL ROADS & CONSTRUCTION OF MINOR GRAVEL ROADS- Various Roads
+                        <br>
+                        <strong>Cost:</strong> R25 075 128.86
+                        <br>
+                        <strong>Duration:</strong> 7 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong>  
+                        NELSON MANDELA BAY MUNICIPALITY - CONCRETE ROAD, MISSIONVALE
+                        <br>
+                        <strong>Cost:</strong> R6 995 328.19
+                        <br>
+                        <strong>Duration:</strong> 3 Months
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="portfolio-section">
+            <h2><i class="fas fa-building"></i> Building & Renovations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Temporary Shelters
+                        <br>
+                        <strong>Cost:</strong> R31 500 000.00
+                        <br>
+                        <strong>Duration:</strong> 4 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality - Temporary Shelters & Water Supply
+                        <br>
+                        <strong>Cost:</strong>  R24 192 000.00
+                        <br>
+                        <strong>Duration:</strong> 5 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> DEPARTMENT OF HUMAN SETTLEMENTS-UITENHAGE MPCC - Building renovations
+                        <br>
+                        <strong>Cost:</strong> R3 853 705.00
+                        <br>
+                        <strong>Duration:</strong> 5 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong>  HDA-HOUDING DEVELOPMENT AGENCY_Khayamnandi - Rectification of Top Structures
+                        <br>
+                        <strong>Cost:</strong>  R2 866 544.40
+                        <br>
+                        <strong>Duration:</strong> 10 Months
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> DEPT. OF PUBLIC WORKS_MAKHANDA  ARTISAN CENTRE - Building Renovations
+                        <br>
+                        <strong>Cost:</strong> R11 080 134.00
+                        <br>
+                        <strong>Duration:</strong> 9 Months
+                    </div>
+                </div>
+
+                <!-- Add more building and renovation projects here -->
+            </div>
+        </div>
+        <div class="portfolio-section">
+            <h2><i class="fas fa-water"></i> Stormwater</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality-Construction of Stormwater and manholes
+                        <br>
+                        <strong>Cost:</strong>  R3 870 900.00
+                        <br>
+                        <strong>Duration:</strong> 3 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Nelson Mandela Bay Municipality-Laying of Stormwater pipes
+                        <br>
+                        <strong>Cost:</strong>  R2 500 000.00
+                        <br>
+                        <strong>Duration:</strong> 3 Months
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio-section">
+            <h2><i class="fas fa-fiber"></i> Fibre Installations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> TELELANGA - Fibre Installation (Pietermaritzburg)
+                        <br>
+                        <strong>Cost:</strong> R6mil
+                        <br>
+                        <strong>Duration:</strong> 12 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> TELELANGA - Fibre Installation (Margate)
+                        <br>
+                        <strong>Cost:</strong> R3.5mil
+                        <br>
+                        <strong>Duration:</strong> 12 Months
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> TELELANGA - Fibre Installation (East London)
+                        <br>
+                        <strong>Cost:</strong> R4.5mil
+
+                        <br>
+                        <strong>Duration:</strong> 12 Months
+                    </div>
+                </div>
+                <!-- Add more fibre installation projects here -->
+            </div>
+        </div>
+
+        <div class="portfolio-section">
+            <h2><i class="fas fa-hard-hat"></i> Building</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Lusikisiki College of Education - Building Renovations
+                        <br>
+                        <strong>Cost:</strong> R22 485 487.00
+                        <br>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> EMERGENCY TEMPORAL STRUCTURES_Dept of Human Settlement
+                        <br>
+                        <strong>Cost:</strong>  R67 500 000.00
+                        <br>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong>  PORT ALFRED_Ndlambe Municipality - Supply, deliver & Installation of Low Flush toilets
+                        <br>
+                        <strong>Cost:</strong>  R11 350 839.61
+                        <br>
+                    </div>
+                </div>
+                <!-- Add more current building projects here -->
+            </div>
+        </div>
+
+        <div class="portfolio-section">
+            <h2><i class="fas fa-road"></i> Civil</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> Paving of Phafa Street - NMBM - Paving of road
+                        <br>
+                        <strong>Cost:</strong> R2 794 396.70
+                        <br>
+        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong>  PAVING OF M.VUBA STREET - NMBM - Paving of road
+                        <br>
+                        <strong>Cost:</strong>  R1 989 351032
+                        <br>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Project:</strong> CONSTRUCTION OF CONCRETE ROAD MISSIONVALE Phase 2 - NMBM -  Casting of Concrete Road
+                        <br>
+                        <strong>Cost:</strong>  R4 291 198.69
+                        <br>
+    
+                    </div>
+                </div>
+                <!-- Add more current civil projects here -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
