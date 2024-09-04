@@ -134,7 +134,6 @@ html{
     background-position: center;
     position: relative;
     background-attachment: fixed;
-
 }
 .inner-back-text{
     position: absolute;
@@ -168,7 +167,14 @@ html{
 .inner-back-btn a{
     margin-right: 1rem;
 }
-.first-btn, .second-btn{
+.first-btn{
+    padding: 1.5rem 2.4rem;
+    background: #089608;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+.second-btn{
     padding: 1.5rem 4rem;
     background: #089608;
     border-radius: 15px;
@@ -182,6 +188,7 @@ html{
 }
 .about{
     padding: 3rem 7%;
+    background-color: rgb(241, 233, 233);
 }
 .main-about{
     display: flex;
@@ -220,6 +227,62 @@ height:30vw;
 box-shadow: 0 0 5px black;
 margin-left: 2vw;
 }
+
+.team h1{
+font-size: 2.5vw;
+text-align: center;
+color: var(--mainclr);
+text-transform: uppercase;
+margin-top: 1vw;
+}
+
+.team .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px 20px;
+    margin-bottom: 0;
+  }
+  
+  .team .box-container .box {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .team .box-container .box:hover .content {
+    margin-bottom: 0;
+  }
+  
+  .team .box-container .box img {
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px 4px #07d423;
+  }
+  
+  .team .box-container .box .content {
+    padding: 2rem;
+    margin-bottom: rem;
+  }
+  
+  .team .box-container .box .content h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #334;
+  }
+  
+  .team .box-container .box .content p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #777;
+    padding: .5rem 0;
+  }
+  
+  
 .chose-us{
     padding: 5rem 7%;
     background-color: turquoise;
@@ -278,19 +341,25 @@ transform: translateY(-25px);
     padding: 0 1rem;
 }
 
-/*  Services */
 
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-    .inner-service {
-        width: 45%;
+@media only screen and (max-width: 768px) {
+    .inner-back-text {
+        width: 80%;
+        margin-left: 10vw;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .inner-service {
-        width: 100%;
+@media only screen and (max-width: 480px) {
+    .inner-back-text {
+        width: 90%;
+        margin-left: 10vw;
+
+    }
+
+    .inner-back-btn a {
+        display: block;
+        margin: 10px auto;
+        margin-left: 10vw;
     }
 }
 
@@ -592,4 +661,5 @@ transform: translateY(-25px);
   .footer .credit span {
     color: #3ce74a
   }
+  
   
